@@ -9,14 +9,12 @@ import android.graphics.drawable.RippleDrawable;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
 import android.graphics.drawable.shapes.RectShape;
-import android.support.annotation.NonNull;
 import android.support.v7.graphics.Palette;
 
 /**
  * Created by
  *
  * @author Mohammed Al-Safwan
- * @date 2017-01-27
  * for NyanRex Developments
  * Contact at :nyanrex52@gmail.com
  */
@@ -58,7 +56,6 @@ public class RippleDrawableWrapper {
         );
     }
 
-    @NonNull
     private Drawable getOvalRippleColor(int color, int width, int height) {
 //        float[] outerRadii = new float[8];
 //        Arrays.fill(outerRadii, 3);
@@ -70,7 +67,6 @@ public class RippleDrawableWrapper {
         return shapeDrawable;
     }
 
-    @NonNull
     private Drawable getRecRippleColor(int color, int width, int height) {
 //        float[] outerRadii = new float[8];
 //        Arrays.fill(outerRadii, 3);
