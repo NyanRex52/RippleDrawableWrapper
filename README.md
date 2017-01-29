@@ -17,6 +17,14 @@ Limitations
 -----------
 * Bitmap can't be null
 
+Gradle
+------
+```
+dependencies {
+    ...
+    compile 'nyanrex.dev:ripple-drawable-wrapper:1.0.0'
+}
+```
 
 License
 -------
