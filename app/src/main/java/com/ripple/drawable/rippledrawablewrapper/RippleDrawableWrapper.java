@@ -32,11 +32,11 @@ public class RippleDrawableWrapper {
         mAlphaFraction = alphaFraction;
     }
 
-    public Drawable getCircularDomColor(Bitmap admin) {
-        int color = Palette.from(admin).generate().getVibrantColor(Color.WHITE);
+    public Drawable getCircularDomColor(Bitmap bm) {
+        int color = Palette.from(bm).generate().getVibrantColor(Color.WHITE);
         ColorStateList pressedColor = ColorStateList.valueOf(lightenOrDarken(color, 0.2D));
         ColorDrawable defaultColor = new ColorDrawable(color);
-        Drawable rippleColor = getOvalRippleColor(color, admin.getWidth(), admin.getHeight());
+        Drawable rippleColor = getOvalRippleColor(color, bm.getWidth(), bm.getHeight());
         return new RippleDrawable(
                 pressedColor,
                 null,
@@ -44,11 +44,11 @@ public class RippleDrawableWrapper {
         );
     }
 
-    public Drawable getRecDomColor(Bitmap partyBanner) {
-        int color = Palette.from(partyBanner).generate().getVibrantColor(Color.WHITE);
+    public Drawable getRecDomColor(Bitmap bm) {
+        int color = Palette.from(bm).generate().getVibrantColor(Color.WHITE);
         ColorStateList pressedColor = ColorStateList.valueOf(lightenOrDarken(color, 0.2D));
         ColorDrawable defaultColor = new ColorDrawable(color);
-        Drawable rippleColor = getRecRippleColor(color, partyBanner.getWidth(), partyBanner.getHeight());
+        Drawable rippleColor = getRecRippleColor(color, bm.getWidth(), bm.getHeight());
         return new RippleDrawable(
                 pressedColor,
                 null,
